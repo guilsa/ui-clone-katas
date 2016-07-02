@@ -1,0 +1,39 @@
+.leftSidebar {
+  background-color: pink;
+}
+
+.mainContainer {
+  background-color: red;
+}
+
+.rightSidebar {
+  background-color: green;
+}
+
+/*.grid7 .col-md-1 {
+  background-color: red;
+  width: 23%;
+}
+.grid7 .col-md-2 {
+  background-color: green;
+  width: 45%;
+  min-width: 653px;
+}
+.grid7 .col-md-3 {
+  background-color: gray;
+  width: 32%;
+}
+
+.grid6 .col-md-1 {
+  background-color: yellow;
+  width: 17%;
+}
+.grid6 .col-md-2 {
+  background-color: blue;
+  width: 45%;
+  min-width: 653px;
+}
+.grid6 .col-md-3 {
+  background-color: brown;
+  width: 28%;
+}*/
