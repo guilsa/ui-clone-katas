@@ -5,6 +5,9 @@
     <title></title>
     <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="leftsidebar.css" rel="stylesheet">
+    <link href="maincontainer.css" rel="stylesheet">
+    <link href="rightsidebar.css" rel="stylesheet">
     <style>
     /*largest*/
     @media only screen and (min-width: 1201px) {
@@ -32,7 +35,7 @@
     </style>
 
   </head>
-  <body>
+  <body class="body">
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -42,16 +45,18 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
+
+            <!-- Nav left -->
             <ul class="nav navbar-nav">
               <li>
                 <svg width="34" height="34" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20" fill="#DA552F"></path><path d="M22.667 20H17v-6h5.667c1.656 0 3 1.343 3 3s-1.344 3-3 3m0-10H13v20h4v-6h5.667c3.866 0 7-3.134 7-7s-3.134-7-7-7" fill="#FFF"></path></g></svg>
                 <input class="searchInput" type="text">
               </li>
             </ul>
+
+            <!-- Nav right -->
             <ul class="nav navbar-nav navbar-right">
-              <span class="metaMenu">
-                ...
-              </span>
+              <span class="metaMenu">...</span>
               <a href="#" class="addPostButton">
                 <span>
                   <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M8,10 L8,4 L6,4 L6,10 L0,10 L0,12 L6,12 L6,18 L8,18 L8,12 L14,12 L14,10 L8,10 Z" transform="translate(0 -4)" fill="#999" fill-rule="evenodd"></path></svg>
@@ -63,8 +68,8 @@
                 </span>
               </a>
               <a href="#" class="userMenu">
-                <span class="userImage">
-                  <img height="32" width="32" src="https://ph-avatars.imgix.net/44691/original?auto=format&w=32&h=32&q=5&fit=crop" alt="">
+                <span>
+                  <img class="userImage" height="32" width="32" src="https://ph-avatars.imgix.net/44691/original" alt="">
                 </span>
               </a>
             </ul>
@@ -77,9 +82,201 @@
 
 <div class="container">
   <div class="row" id="largest">
+    <!-- start of leftSidebar -->
     <div class="col-sm-2 leftSidebar">.leftSidebar</div>
-    <div class="col-sm-7 mainContainer">.mainContainer</div>
-    <div class="col-sm-3 rightSidebar">.rightSidebar</div>
+    <!-- start of leftSidebar -->
+
+    <!-- start of mainContainer -->
+    <div class="col-sm-7 mainContainer">
+      <!-- original div class="content" -->
+      <div class="">
+        <div class="header">
+          <span class="title featured default base">Today</span>
+          <div class="toggle">
+            <a href="#" class="secondaryText default base">Popular</a>
+            <a href="#" class="secondaryText subtle base">Newest</a>
+          </div>
+        </div>
+        <div class="posts">
+          <ul>
+            <li>
+              <div class="postItem">
+                <a href="#" class="link">
+                  <div class="post-thumbnail2 thumbnail2">
+                    <img height="80" width="80" src="https://ph-files.imgix.net/f45e465e-773d-4678-9d41-297447960715" alt="">
+                  </div>
+                </a>
+                <div class="content">
+                  <!-- Issue:
+                  Font-weight is set to 200 but isn't the same as in PH -->
+                  <span class="title featured default base">
+                    Pomodoro Time
+                  </span>
+                  <p class="text subtle base">
+                    Simple Pomodoro timer in your Mac's menu bar
+                  </p>
+                  <div class="meta">
+                    <!-- //actionButtons has no styling so far -->
+                    <div class="actionButtons">
+                      <button class="button smallSize secondaryText simpleVariant">
+                        <div class="buttonContainer">
+                          <div class="postButtonArrow"></div>
+                          <span>&nbsp;</span>
+                          <span>314</span>
+                        </div>
+                      </button>
+                      <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
+                        <div class="buttonContainer">
+                          <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
+                          <span>
+                            <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
+                          </span>
+                          <span>&nbsp;</span>
+                          <span>18</span>
+                        </div>
+                      </a>
+                      <!-- Todo: On hover, display:none, show  -->
+
+                      <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
+                        <div class="buttonContainer">
+                          <span>🏆</span>
+                          #1 in Tech
+                        </div>
+                      </a> -->
+                      <span class="secondaryText subtle base">
+                        <span>🏆</span>
+                        #1 in Tech
+                      </span>
+                    </div>
+                    <div class="associations"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end of mainContainer -->
+
+    <!-- start of rightSidebar -->
+    <div class="col-sm-3">
+
+      <!-- Connect with Facebook sidebox -->
+      <div class="sidebarBoxPadding rightSidebar box">
+        <!-- Issue: class="content" is a duplicate. Make this one upcomingLiveChatsContent -->
+        <div class="content">
+          <span class="dismiss">
+            <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 4.586l4.24-4.24c.395-.395 1.026-.392 1.416-.002.393.393.39 1.024 0 1.415L7.413 6l4.24 4.24c.395.395.392 1.026.002 1.416-.393.393-1.024.39-1.415 0L6 7.413l-4.24 4.24c-.395.395-1.026.392-1.416.002-.393-.393-.39-1.024 0-1.415L4.587 6 .347 1.76C-.05 1.364-.048.733.342.343c.393-.393 1.024-.39 1.415 0L6 4.587z" fill-rule="evenodd">
+              </path>
+            </svg>
+          </span>
+          <span class="featured">It's More fun with friends</span>
+          <p class="text subtle">Connect your Facebook account to see what your friends are upvoting.</p>
+          <div class="actions">
+            <button type="button" class="btn btn-primary">Connect to Facebook</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcoming live chats sidebox -->
+      <div class="box paddledBox">
+        <div class="content">
+          <div class="header">
+            <span class="sidebarTitle">Upcoming live chats</span>
+          </div>
+          <ul>
+
+            <!-- amaEvent listItem -->
+            <li class="amaEvent listItem">
+              <a href="#">
+                <span class="test">
+                  <img class="userImage" height="35" width="35" src="https://ph-files.imgix.net/331317a3-f071-47eb-b026-761b06517f94" alt="">
+                </span>
+              </a>
+              <a href="#">
+                <div class="amaEventContent">
+                  <a href="#" class="boldText text default base">Brian Sacca</a>
+                  <div class="text subtle base">
+                    Actor, Producer and Comedian
+                  </div>
+                </div>
+              </a>
+              <button class="amaEventSubscriptionButton secondaryText">
+                REMIND ME
+              </button>
+            </li>
+
+            <!-- amaEvent listItem -->
+            <li class="amaEvent listItem">
+              <a href="#">
+                <span class="test">
+                  <img class="userImage" height="35" width="35" src="https://ph-files.imgix.net/2b501feb-451d-44ef-af43-29b361e851dd" alt="">
+                </span>
+              </a>
+              <a href="#">
+                <div class="amaEventContent">
+                  <a href="#" class="boldText text default base">Jake Paul</a>
+                  <div class="text subtle base">
+                    Social Entrepreneur and Entertainer
+                  </div>
+                </div>
+              </a>
+              <button class="amaEventSubscriptionButton secondaryText">
+                REMIND ME
+              </button>
+            </li>
+
+            <!-- amaEvent listItem -->
+            <li class="amaEvent listItem">
+              <a href="#">
+                <span class="test">
+                  <img class="userImage" height="35" width="35" src="https://ph-avatars.imgix.net/20669/original" alt="">
+                </span>
+              </a>
+              <a href="#">
+                <div class="amaEventContent">
+                  <a href="#" class="boldText text default base">Danielle Morrill</a>
+                  <div class="text subtle base">
+                    CEO & Cofounder of Mattermark
+                  </div>
+                </div>
+              </a>
+              <button class="amaEventSubscriptionButton secondaryText">
+                REMIND ME
+              </button>
+            </li>
+
+            <!-- amaEvent listItem -->
+            <li class="amaEvent listItem">
+              <a href="#">
+                <span class="test">
+                  <img class="userImage" height="35" width="35" src="https://ph-avatars.imgix.net/152490/original" alt="">
+                </span>
+              </a>
+              <a href="#">
+                <div class="amaEventContent">
+                  <a href="#" class="boldText text default base">Rodney 'Darkchild' Jerkins</a>
+                  <div class="text subtle base">
+                    CEO Evolve Music, Media & Tech, Seventy7...
+                  </div>
+                </div>
+              </a>
+              <button class="amaEventSubscriptionButton secondaryText">
+                REMIND ME
+              </button>
+            </li>
+
+          </ul>
+          <a href="#" class="seeMore secondaryText default base">SEE MORE</a>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- end of rightSidebar -->
+
   </div>
   <div class="row" id="medium">
     <div class="col-sm-2 leftSidebar">.leftSidebar</div>
