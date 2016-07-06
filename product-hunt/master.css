@@ -1,39 +1,58 @@
-.leftSidebar {
-  background-color: pink;
+a {
+  text-decoration: none;
 }
 
-.mainContainer {
-  background-color: red;
+ul {
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
 }
 
-.rightSidebar {
-  background-color: green;
+.body {
+  background: #f9f9f9;
 }
 
-/*.grid7 .col-md-1 {
-  background-color: red;
-  width: 23%;
-}
-.grid7 .col-md-2 {
-  background-color: green;
-  width: 45%;
-  min-width: 653px;
-}
-.grid7 .col-md-3 {
-  background-color: gray;
-  width: 32%;
+.text {
+  margin: 10px 0 20px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.grid6 .col-md-1 {
-  background-color: yellow;
-  width: 17%;
+.boldText {
+  font-weight: 600;
 }
-.grid6 .col-md-2 {
-  background-color: blue;
-  width: 45%;
-  min-width: 653px;
+
+.secondaryText {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: .6px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
-.grid6 .col-md-3 {
-  background-color: brown;
-  width: 28%;
-}*/
+
+.base {
+  font-family: proxima-nova,Proxima Nova,helvetica,arial,sans-serif;
+  margin: 0px;
+}
+
+.featured {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: .2px;
+  line-height: 24px;
+}
+
+.default {
+  color: #000;
+}
+
+.subtle {
+  color: #999;
+}
+
+.userImage {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
