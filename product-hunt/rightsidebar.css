@@ -11,6 +11,10 @@
   padding: 0 20px;
 }
 
+.paddledBox ul {
+  margin-top: 20px;
+}
+
 .box {
   background: #fff;
   border: 1px solid #f2f2f2;
