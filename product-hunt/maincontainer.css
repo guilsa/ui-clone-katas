@@ -7,12 +7,6 @@
   margin: 0 0 20px;
 }
 
-.header {
-  margin: 0 20px;
-  border-bottom: 1px solid #f2f2f2;
-  padding: 15px 0;
-}
-
 .toggle {
   cursor: pointer;
 }
@@ -157,4 +151,17 @@ align-items: center;
 
 .associations {
   /*display: inline-block;*/
+}
+
+.red {
+  background-color: red;
+  display: inline-flex;
+}
+
+.black {
+  background-color: black;
+}
+
+.display1 {
+  float: right;
 }
