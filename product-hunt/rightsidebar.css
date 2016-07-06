@@ -1,0 +1,82 @@
+.rightSidebar {
+  margin-left: 20px;
+  width: 250px;
+}
+
+.sidebarBoxPadding {
+  padding: 20px;
+}
+
+.paddledBox {
+  padding: 0 20px;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  margin: 0 0 20px;
+}
+
+.dismiss {
+  float: right;
+}
+
+/* Upcoming Live Chats */
+
+.header {
+  align-items: baseline;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.sidebarTitle {
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+}
+
+.listItem {
+  margin-bottom: 20px;
+}
+
+.amaEventContent {
+  margin-left: 10px;
+}
+
+.test {
+  position: relative;
+}
+
+.amaEvent img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.amaEventSubscriptionButton {
+  margin-top: 5px;
+  background: #fff;
+  color: #000;
+  fill: #000;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border: 1px solid #f2f2f2;
+}
+
+.seeMore {
+  border-top: 1px solid #f2f2f2;
+  color: #da552f;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
