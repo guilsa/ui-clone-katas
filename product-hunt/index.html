@@ -9,28 +9,10 @@
     <link href="maincontainer.css" rel="stylesheet">
     <link href="rightsidebar.css" rel="stylesheet">
     <style>
-    /*largest*/
-    @media only screen and (min-width: 1201px) {
-      #medium, #small {
-        display: none;
-      }
-    }
 
-    @media only screen and (min-width: 798px) and (max-width: 1200px) {
-      #largest, #small {
-        display: none;
+      .nav {
+        height: 20px;
       }
-    }
-
-    @media only screen and (max-width: 797px) {
-      #largest, #medium {
-        display: none;
-      }
-    }
-
-    .nav {
-      height: 20px;
-    }
 
     </style>
 
@@ -80,423 +62,422 @@
     </div>
   </nav>
 
+
 <div class="container">
-  <div class="row" id="largest">
-    <!-- start of leftSidebar -->
-    <div class="col-sm-2 leftSidebar">
-      <section>
-        <ul>
-          <li><a href="#" class="item itemBase text default base itemActive">Home</a></li>
-          <li><a href="#" class="item itemBase text default base">Collections</a></li>
-          <li><a href="#" class="item itemBase text default base">LIVE Chats</a></li>
-          <li><a href="#" class="item itemBase text default base">Shop</a></li>
-        </ul>
-      </section>
-      <section>
-        <span class="titleMenu default base">Categories</span>
-        <ul>
-          <li><a href="#" class="item itemBase text default base">Tech</a></li>
-          <li><a href="#" class="item itemBase text default base">Games</a></li>
-          <li><a href="#" class="item itemBase text default base">Books</a></li>
-          <li><a href="#" class="item itemBase text default base">Podcasts</a></li>
-        </ul>
-      </section>
-      <section>
-        <span class="titleMenu default base">Topics</span>
-        <ul>
-          <li>
-            <a href="#" class="item itemBase text default base">Bots</a>
-            <span class="trending">🔥</span>
-          </li>
-          <li>
-            <a href="#" class="item itemBase text default base">Design Tools</a>
-            <span class="trending">🔥</span>
-          </li>
-          <li>
-            <a href="#" class="item itemBase text default base">Developer Tools</a>
-            <span class="trending">🔥</span>
-          </li>
-          <li>
-            <a href="#" class="item itemBase text default base">Education</a>
-            <span class="trending">🔥</span>
-          </li>
-          <li>
-            <a href="#" class="item itemBase text default base">LinkedIn</a>
-            <span class="trending">🔥</span>
-          </li>
-          <li>
-            <a href="#" class="item itemBase text default base">Marketing</a>
-            <span class="trending">🔥</span>
-          </li>
-          <li>
-            <a href="#" class="item itemBase text default base">Smart Home</a>
-            <span class="trending">🔥</span>
-          </li>
-          <li>
-            <a href="#" class="item itemBase text default base">Wearables</a>
-            <span class="trending">🔥</span>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <!-- end of leftSidebar -->
+  <!-- start of leftSidebar -->
+  <div class="col-sm-2 hidden-xs leftSidebar">
+    <section>
+      <ul>
+        <li><a href="#" class="item itemBase text default base itemActive">Home</a></li>
+        <li><a href="#" class="item itemBase text default base">Collections</a></li>
+        <li><a href="#" class="item itemBase text default base">LIVE Chats</a></li>
+        <li><a href="#" class="item itemBase text default base">Shop</a></li>
+      </ul>
+    </section>
+    <section>
+      <span class="titleMenu default base">Categories</span>
+      <ul>
+        <li><a href="#" class="item itemBase text default base">Tech</a></li>
+        <li><a href="#" class="item itemBase text default base">Games</a></li>
+        <li><a href="#" class="item itemBase text default base">Books</a></li>
+        <li><a href="#" class="item itemBase text default base">Podcasts</a></li>
+      </ul>
+    </section>
+    <section>
+      <span class="titleMenu default base">Topics</span>
+      <ul>
+        <li>
+          <a href="#" class="item itemBase text default base">Bots</a>
+          <span class="trending">🔥</span>
+        </li>
+        <li>
+          <a href="#" class="item itemBase text default base">Design Tools</a>
+          <span class="trending">🔥</span>
+        </li>
+        <li>
+          <a href="#" class="item itemBase text default base">Developer Tools</a>
+          <span class="trending">🔥</span>
+        </li>
+        <li>
+          <a href="#" class="item itemBase text default base">Education</a>
+          <span class="trending">🔥</span>
+        </li>
+        <li>
+          <a href="#" class="item itemBase text default base">LinkedIn</a>
+          <span class="trending">🔥</span>
+        </li>
+        <li>
+          <a href="#" class="item itemBase text default base">Marketing</a>
+          <span class="trending">🔥</span>
+        </li>
+        <li>
+          <a href="#" class="item itemBase text default base">Smart Home</a>
+          <span class="trending">🔥</span>
+        </li>
+        <li>
+          <a href="#" class="item itemBase text default base">Wearables</a>
+          <span class="trending">🔥</span>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!-- end of leftSidebar -->
 
-    <!-- start of mainContainer -->
-    <div class="col-sm-7 mainContainer">
-      <!-- original div class="content" -->
-      <div class="">
-        <div class="header">
-          <span class="title featured default base">Today</span>
-          <div class="toggle">
-            <a href="#" class="secondaryText default base">Popular</a>
-            <a href="#" class="secondaryText subtle base">Newest</a>
-          </div>
+  <!-- start of mainContainer -->
+  <div class="col-xs-12 col-sm-10 col-lg-7 mainContainer">
+    <!-- original div class="content" -->
+    <div class="">
+      <div class="header">
+        <span class="title featured default base">Today</span>
+        <div class="toggle">
+          <a href="#" class="secondaryText default base">Popular</a>
+          <a href="#" class="secondaryText subtle base">Newest</a>
         </div>
-        <div class="posts">
-          <ul>
-            <li>
-              <div class="postItem">
-                <a href="#" class="link">
-                  <div class="post-thumbnail2 thumbnail2">
-                    <img height="80" width="80" src="https://ph-files.imgix.net/f45e465e-773d-4678-9d41-297447960715" alt="">
-                  </div>
-                </a>
-                <div class="content">
-                  <!-- Issue:
-                  Font-weight is set to 200 but isn't the same as in PH -->
-                  <span class="title featured default base">
-                    Pomodoro Time
-                  </span>
-                  <p class="text subtle base">
-                    Simple Pomodoro timer in your Mac's menu bar
-                  </p>
-                  <div class="meta">
-                    <!-- //actionButtons has no styling so far -->
-                    <div class="actionButtons">
-                      <button class="button smallSize secondaryText simpleVariant">
-                        <div class="buttonContainer">
-                          <div class="postButtonArrow"></div>
-                          <span>&nbsp;</span>
-                          <span>314</span>
-                        </div>
-                      </button>
-                      <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
-                          <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
-                          </span>
-                          <span>&nbsp;</span>
-                          <span>18</span>
-                        </div>
-                      </a>
-                      <!-- Todo: On hover, display:none, show  -->
+      </div>
+      <div class="posts">
+        <ul>
+          <li>
+            <div class="postItem">
+              <a href="#" class="link">
+                <div class="post-thumbnail2 thumbnail2">
+                  <img height="80" width="80" src="https://ph-files.imgix.net/f45e465e-773d-4678-9d41-297447960715" alt="">
+                </div>
+              </a>
+              <div class="content">
+                <!-- Issue:
+                Font-weight is set to 200 but isn't the same as in PH -->
+                <span class="title featured default base">
+                  Pomodoro Time
+                </span>
+                <p class="text subtle base">
+                  Simple Pomodoro timer in your Mac's menu bar
+                </p>
+                <div class="meta">
+                  <!-- //actionButtons has no styling so far -->
+                  <div class="actionButtons">
+                    <button class="button smallSize secondaryText simpleVariant">
+                      <div class="buttonContainer">
+                        <div class="postButtonArrow"></div>
+                        <span>&nbsp;</span>
+                        <span>314</span>
+                      </div>
+                    </button>
+                    <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
+                        <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
+                        <span>
+                          <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
+                        </span>
+                        <span>&nbsp;</span>
+                        <span>18</span>
+                      </div>
+                    </a>
+                    <!-- Todo: On hover, display:none, show  -->
 
-                      <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <span>🏆</span>
-                          #1 in Tech
-                        </div>
-                      </a> -->
-                      <span class="secondaryText subtle base">
+                    <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
                         <span>🏆</span>
                         #1 in Tech
-                      </span>
-                    </div>
-                    <div class="associations"></div>
+                      </div>
+                    </a> -->
+                    <span class="secondaryText subtle base">
+                      <span>🏆</span>
+                      #1 in Tech
+                    </span>
                   </div>
+                  <div class="associations"></div>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="postItem">
-                <a href="#" class="link">
-                  <div class="post-thumbnail2 thumbnail2">
-                    <img height="80" width="80" src="https://ph-files.imgix.net/f2786e35-46fa-4f33-a658-b517a1ada8e0" alt="">
-                  </div>
-                </a>
-                <div class="content">
-                  <!-- Issue:
-                  Font-weight is set to 200 but isn't the same as in PH -->
-                  <span class="title featured default base">
-                    Interesting Finds, by Amazon
-                  </span>
-                  <p class="text subtle base">
-                    New and interesting products from across Amazon
-                  </p>
-                  <div class="meta">
-                    <!-- //actionButtons has no styling so far -->
-                    <div class="actionButtons">
-                      <button class="button smallSize secondaryText simpleVariant">
-                        <div class="buttonContainer">
-                          <div class="postButtonArrow"></div>
-                          <span>&nbsp;</span>
-                          <span>183</span>
-                        </div>
-                      </button>
-                      <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
-                          <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
-                          </span>
-                          <span>&nbsp;</span>
-                          <span>11</span>
-                        </div>
-                      </a>
-                      <!-- Todo: On hover, display:none, show  -->
+            </div>
+          </li>
+          <li>
+            <div class="postItem">
+              <a href="#" class="link">
+                <div class="post-thumbnail2 thumbnail2">
+                  <img height="80" width="80" src="https://ph-files.imgix.net/f2786e35-46fa-4f33-a658-b517a1ada8e0" alt="">
+                </div>
+              </a>
+              <div class="content">
+                <!-- Issue:
+                Font-weight is set to 200 but isn't the same as in PH -->
+                <span class="title featured default base">
+                  Interesting Finds, by Amazon
+                </span>
+                <p class="text subtle base">
+                  New and interesting products from across Amazon
+                </p>
+                <div class="meta">
+                  <!-- //actionButtons has no styling so far -->
+                  <div class="actionButtons">
+                    <button class="button smallSize secondaryText simpleVariant">
+                      <div class="buttonContainer">
+                        <div class="postButtonArrow"></div>
+                        <span>&nbsp;</span>
+                        <span>183</span>
+                      </div>
+                    </button>
+                    <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
+                        <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
+                        <span>
+                          <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
+                        </span>
+                        <span>&nbsp;</span>
+                        <span>11</span>
+                      </div>
+                    </a>
+                    <!-- Todo: On hover, display:none, show  -->
 
-                      <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <span>🏆</span>
-                          #1 in Tech
-                        </div>
-                      </a> -->
-                      <span class="secondaryText subtle base">
-                        <span>🔥</span>
-                        Trending right now
-                      </span>
-                    </div>
-                    <div class="associations"></div>
+                    <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
+                        <span>🏆</span>
+                        #1 in Tech
+                      </div>
+                    </a> -->
+                    <span class="secondaryText subtle base">
+                      <span>🔥</span>
+                      Trending right now
+                    </span>
                   </div>
+                  <div class="associations"></div>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="postItem">
-                <a href="#" class="link">
-                  <div class="post-thumbnail2 thumbnail2">
-                    <img height="80" width="80" src="https://ph-files.imgix.net/25ecd2ea-799d-4631-87ea-f840fa46c3cb" alt="">
-                  </div>
-                </a>
-                <div class="content">
-                  <!-- Issue:
-                  Font-weight is set to 200 but isn't the same as in PH -->
-                  <span class="title featured default base">
-                    Snapchat Memories
-                  </span>
-                  <p class="text subtle base">
-                    Save and search for snaps on Snapchat
-                  </p>
-                  <div class="meta">
-                    <!-- //actionButtons has no styling so far -->
-                    <div class="actionButtons">
-                      <button class="button smallSize secondaryText simpleVariant">
-                        <div class="buttonContainer">
-                          <div class="postButtonArrow"></div>
-                          <span>&nbsp;</span>
-                          <span>85</span>
-                        </div>
-                      </button>
-                      <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
-                          <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
-                          </span>
-                          <span>&nbsp;</span>
-                          <span>18</span>
-                        </div>
-                      </a>
-                      <!-- Todo: On hover, display:none, show  -->
+            </div>
+          </li>
+          <li>
+            <div class="postItem">
+              <a href="#" class="link">
+                <div class="post-thumbnail2 thumbnail2">
+                  <img height="80" width="80" src="https://ph-files.imgix.net/25ecd2ea-799d-4631-87ea-f840fa46c3cb" alt="">
+                </div>
+              </a>
+              <div class="content">
+                <!-- Issue:
+                Font-weight is set to 200 but isn't the same as in PH -->
+                <span class="title featured default base">
+                  Snapchat Memories
+                </span>
+                <p class="text subtle base">
+                  Save and search for snaps on Snapchat
+                </p>
+                <div class="meta">
+                  <!-- //actionButtons has no styling so far -->
+                  <div class="actionButtons">
+                    <button class="button smallSize secondaryText simpleVariant">
+                      <div class="buttonContainer">
+                        <div class="postButtonArrow"></div>
+                        <span>&nbsp;</span>
+                        <span>85</span>
+                      </div>
+                    </button>
+                    <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
+                        <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
+                        <span>
+                          <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
+                        </span>
+                        <span>&nbsp;</span>
+                        <span>18</span>
+                      </div>
+                    </a>
+                    <!-- Todo: On hover, display:none, show  -->
 
-                      <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <span>🏆</span>
-                          #1 in Tech
-                        </div>
-                      </a> -->
-                      <span class="secondaryText subtle base">
-                        <span>🔥</span>
-                        Trending right now
-                      </span>
-                    </div>
-                    <div class="associations"></div>
+                    <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
+                        <span>🏆</span>
+                        #1 in Tech
+                      </div>
+                    </a> -->
+                    <span class="secondaryText subtle base">
+                      <span>🔥</span>
+                      Trending right now
+                    </span>
                   </div>
+                  <div class="associations"></div>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="postItem">
-                <a href="#" class="link">
-                  <div class="post-thumbnail2 thumbnail2">
-                    <img height="80" width="80" src="https://ph-files.imgix.net/49fe39d6-6b27-406d-8cf6-0738a45bd6e9" alt="">
-                  </div>
-                </a>
-                <div class="content">
-                  <!-- Issue:
-                  Font-weight is set to 200 but isn't the same as in PH -->
-                  <span class="title featured default base">
-                    SaaS CSS
-                  </span>
-                  <p class="text subtle base">
-                    Design inspiration for SaaS specific web products
-                  </p>
-                  <div class="meta">
-                    <!-- //actionButtons has no styling so far -->
-                    <div class="actionButtons">
-                      <button class="button smallSize secondaryText simpleVariant">
-                        <div class="buttonContainer">
-                          <div class="postButtonArrow"></div>
-                          <span>&nbsp;</span>
-                          <span>81</span>
-                        </div>
-                      </button>
-                      <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
-                          <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
-                          </span>
-                          <span>&nbsp;</span>
-                          <span>7</span>
-                        </div>
-                      </a>
-                      <!-- Todo: On hover, display:none, show  -->
+            </div>
+          </li>
+          <li>
+            <div class="postItem">
+              <a href="#" class="link">
+                <div class="post-thumbnail2 thumbnail2">
+                  <img height="80" width="80" src="https://ph-files.imgix.net/49fe39d6-6b27-406d-8cf6-0738a45bd6e9" alt="">
+                </div>
+              </a>
+              <div class="content">
+                <!-- Issue:
+                Font-weight is set to 200 but isn't the same as in PH -->
+                <span class="title featured default base">
+                  SaaS CSS
+                </span>
+                <p class="text subtle base">
+                  Design inspiration for SaaS specific web products
+                </p>
+                <div class="meta">
+                  <!-- //actionButtons has no styling so far -->
+                  <div class="actionButtons">
+                    <button class="button smallSize secondaryText simpleVariant">
+                      <div class="buttonContainer">
+                        <div class="postButtonArrow"></div>
+                        <span>&nbsp;</span>
+                        <span>81</span>
+                      </div>
+                    </button>
+                    <a href="#" class="button smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
+                        <!-- Issue: this SVG's height won't correctly align with its sibling's (the above element's) height -->
+                        <span>
+                          <svg width="12" height="11" viewBox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"><path d="M10.0124802,16.8320558 C9.21033653,16.0515289 8.72727273,15.044941 8.72727273,13.9462121 C8.72727273,11.4655331 11.1897066,9.45454545 14.2272727,9.45454545 C17.2648389,9.45454545 19.7272727,11.4655331 19.7272727,13.9462121 C19.7272727,16.4268911 17.2648389,18.4378788 14.2272727,18.4378788 C13.4722764,18.4378788 12.752811,18.3136428 12.0978565,18.0888377 C11.026169,18.7087928 8.93104025,19.527919 8.93104025,19.527919 C8.93104025,19.527919 9.63175021,17.8427438 10.0124802,16.8320558 Z" transform="translate(-8 -9)" fill="black" fill-rule="evenodd"></path></svg>
+                        </span>
+                        <span>&nbsp;</span>
+                        <span>7</span>
+                      </div>
+                    </a>
+                    <!-- Todo: On hover, display:none, show  -->
 
-                      <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
-                        <div class="buttonContainer">
-                          <span>🏆</span>
-                          #1 in Tech
-                        </div>
-                      </a> -->
-                      <span class="secondaryText subtle base">
-                      </span>
-                    </div>
-                    <div class="associations"></div>
+                    <!-- <a href="#" class="smallSize secondaryText subtleVariant simpleVariant">
+                      <div class="buttonContainer">
+                        <span>🏆</span>
+                        #1 in Tech
+                      </div>
+                    </a> -->
+                    <span class="secondaryText subtle base">
+                    </span>
                   </div>
+                  <div class="associations"></div>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end of mainContainer -->
+
+  <!-- start of rightSidebar -->
+  <div class="col-sm-3 col-md-3 hidden-xs hidden-sm hidden-md">
+
+    <!-- Connect with Facebook sidebox -->
+    <div class="sidebarBoxPadding rightSidebar box">
+      <!-- Issue: class="content" is a duplicate. Make this one upcomingLiveChatsContent -->
+      <div class="content">
+        <span class="dismiss">
+          <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 4.586l4.24-4.24c.395-.395 1.026-.392 1.416-.002.393.393.39 1.024 0 1.415L7.413 6l4.24 4.24c.395.395.392 1.026.002 1.416-.393.393-1.024.39-1.415 0L6 7.413l-4.24 4.24c-.395.395-1.026.392-1.416.002-.393-.393-.39-1.024 0-1.415L4.587 6 .347 1.76C-.05 1.364-.048.733.342.343c.393-.393 1.024-.39 1.415 0L6 4.587z" fill-rule="evenodd">
+            </path>
+          </svg>
+        </span>
+        <span class="featured">It's More fun with friends</span>
+        <p class="text subtle">Connect your Facebook account to see what your friends are upvoting.</p>
+        <div class="actions">
+          <button type="button" class="btn btn-primary">Connect to Facebook</button>
         </div>
       </div>
     </div>
-    <!-- end of mainContainer -->
 
-    <!-- start of rightSidebar -->
-    <div class="col-sm-3">
-
-      <!-- Connect with Facebook sidebox -->
-      <div class="sidebarBoxPadding rightSidebar box">
-        <!-- Issue: class="content" is a duplicate. Make this one upcomingLiveChatsContent -->
-        <div class="content">
-          <span class="dismiss">
-            <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 4.586l4.24-4.24c.395-.395 1.026-.392 1.416-.002.393.393.39 1.024 0 1.415L7.413 6l4.24 4.24c.395.395.392 1.026.002 1.416-.393.393-1.024.39-1.415 0L6 7.413l-4.24 4.24c-.395.395-1.026.392-1.416.002-.393-.393-.39-1.024 0-1.415L4.587 6 .347 1.76C-.05 1.364-.048.733.342.343c.393-.393 1.024-.39 1.415 0L6 4.587z" fill-rule="evenodd">
-              </path>
-            </svg>
-          </span>
-          <span class="featured">It's More fun with friends</span>
-          <p class="text subtle">Connect your Facebook account to see what your friends are upvoting.</p>
-          <div class="actions">
-            <button type="button" class="btn btn-primary">Connect to Facebook</button>
-          </div>
+    <!-- Upcoming live chats sidebox -->
+    <div class="box paddledBox">
+      <div class="content">
+        <div class="header">
+          <span class="sidebarTitle">Upcoming live chats</span>
         </div>
+        <ul>
+          <!-- amaEvent listItem -->
+          <li class="amaEvent listItem">
+            <a href="#">
+              <span class="test">
+                <img class="userImage" height="35" width="35" src="https://ph-files.imgix.net/331317a3-f071-47eb-b026-761b06517f94" alt="">
+              </span>
+            </a>
+            <a href="#">
+              <div class="amaEventContent">
+                <a href="#" class="boldText text default base">Brian Sacca</a>
+                <div class="text subtle base">
+                  Actor, Producer and Comedian
+                </div>
+                <button class="amaEventSubscriptionButton secondaryText">
+                  REMIND ME
+                </button>
+              </div>
+            </a>
+          </li>
+          <!-- amaEvent listItem -->
+          <li class="amaEvent listItem">
+            <a href="#">
+              <span class="test">
+                <img class="userImage" height="35" width="35" src="https://ph-files.imgix.net/2b501feb-451d-44ef-af43-29b361e851dd" alt="">
+              </span>
+            </a>
+            <a href="#">
+              <div class="amaEventContent">
+                <a href="#" class="boldText text default base">Jake Paul</a>
+                <div class="text subtle base">
+                  Social Entrepreneur and Entertainer
+                </div>
+                <button class="amaEventSubscriptionButton secondaryText">
+                  REMIND ME
+                </button>
+              </div>
+            </a>
+          </li>
+          <!-- amaEvent listItem -->
+          <li class="amaEvent listItem">
+            <a href="#">
+              <span class="test">
+                <img class="userImage" height="35" width="35" src="https://ph-avatars.imgix.net/20669/original" alt="">
+              </span>
+            </a>
+            <a href="#">
+              <div class="amaEventContent">
+                <a href="#" class="boldText text default base">Danielle Morrill</a>
+                <div class="text subtle base">
+                  CEO & Cofounder of Mattermark
+                </div>
+                <button class="amaEventSubscriptionButton secondaryText">
+                  REMIND ME
+                </button>
+              </div>
+            </a>
+          </li>
+
+          <!-- amaEvent listItem -->
+          <li class="amaEvent listItem">
+            <a href="#">
+              <span class="test">
+                <img class="userImage" height="35" width="35" src="https://ph-avatars.imgix.net/152490/original" alt="">
+              </span>
+            </a>
+            <a href="#">
+              <div class="amaEventContent">
+                <a href="#" class="boldText text default base">Rodney 'Darkchild' Jerkins</a>
+                <div class="text subtle base">
+                  CEO Evolve Music, Media & Tech, Seventy7...
+                </div>
+                <button class="amaEventSubscriptionButton secondaryText">
+                  REMIND ME
+                </button>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+        <a href="#" class="seeMore secondaryText default base">SEE MORE</a>
+
       </div>
-
-      <!-- Upcoming live chats sidebox -->
-      <div class="box paddledBox">
-        <div class="content">
-          <div class="header">
-            <span class="sidebarTitle">Upcoming live chats</span>
-          </div>
-          <ul>
-            <!-- amaEvent listItem -->
-            <li class="amaEvent listItem">
-              <a href="#">
-                <span class="test">
-                  <img class="userImage" height="35" width="35" src="https://ph-files.imgix.net/331317a3-f071-47eb-b026-761b06517f94" alt="">
-                </span>
-              </a>
-              <a href="#">
-                <div class="amaEventContent">
-                  <a href="#" class="boldText text default base">Brian Sacca</a>
-                  <div class="text subtle base">
-                    Actor, Producer and Comedian
-                  </div>
-                  <button class="amaEventSubscriptionButton secondaryText">
-                    REMIND ME
-                  </button>
-                </div>
-              </a>
-            </li>
-            <!-- amaEvent listItem -->
-            <li class="amaEvent listItem">
-              <a href="#">
-                <span class="test">
-                  <img class="userImage" height="35" width="35" src="https://ph-files.imgix.net/2b501feb-451d-44ef-af43-29b361e851dd" alt="">
-                </span>
-              </a>
-              <a href="#">
-                <div class="amaEventContent">
-                  <a href="#" class="boldText text default base">Jake Paul</a>
-                  <div class="text subtle base">
-                    Social Entrepreneur and Entertainer
-                  </div>
-                  <button class="amaEventSubscriptionButton secondaryText">
-                    REMIND ME
-                  </button>
-                </div>
-              </a>
-            </li>
-            <!-- amaEvent listItem -->
-            <li class="amaEvent listItem">
-              <a href="#">
-                <span class="test">
-                  <img class="userImage" height="35" width="35" src="https://ph-avatars.imgix.net/20669/original" alt="">
-                </span>
-              </a>
-              <a href="#">
-                <div class="amaEventContent">
-                  <a href="#" class="boldText text default base">Danielle Morrill</a>
-                  <div class="text subtle base">
-                    CEO & Cofounder of Mattermark
-                  </div>
-                  <button class="amaEventSubscriptionButton secondaryText">
-                    REMIND ME
-                  </button>
-                </div>
-              </a>
-            </li>
-
-            <!-- amaEvent listItem -->
-            <li class="amaEvent listItem">
-              <a href="#">
-                <span class="test">
-                  <img class="userImage" height="35" width="35" src="https://ph-avatars.imgix.net/152490/original" alt="">
-                </span>
-              </a>
-              <a href="#">
-                <div class="amaEventContent">
-                  <a href="#" class="boldText text default base">Rodney 'Darkchild' Jerkins</a>
-                  <div class="text subtle base">
-                    CEO Evolve Music, Media & Tech, Seventy7...
-                  </div>
-                  <button class="amaEventSubscriptionButton secondaryText">
-                    REMIND ME
-                  </button>
-                </div>
-              </a>
-            </li>
-
-          </ul>
-          <a href="#" class="seeMore secondaryText default base">SEE MORE</a>
-
-        </div>
-      </div>
-
     </div>
-    <!-- end of rightSidebar -->
 
   </div>
-  <div class="row" id="medium">
+  <!-- end of rightSidebar -->
+
+  <!-- <div class="row" id="medium">
     <div class="col-sm-2 leftSidebar">.leftSidebar</div>
     <div class="col-sm-10 mainContainer">.mainContainer</div>
   </div>
   <div class="row" id="small">
     <div class="col-sm-12 mainContainer">mainContainer</div>
-  </div>
+  </div> -->
 </div>
 
 
