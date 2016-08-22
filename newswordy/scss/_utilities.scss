@@ -1,0 +1,16 @@
+// ======================
+// Utilities
+// ======================
+
+// Calculate em values
+
+@function em($target, $context: $base__font) {
+  @return ($target / $content) * 1em;
+}
+// Mixins
+
+@each $theme, $color in $ui-colors {
+  .btn--#{$theme} {
+    background-color: $color;
+  }
+}
